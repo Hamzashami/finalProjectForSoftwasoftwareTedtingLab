@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.android.testing.espresso.RecyclerViewSample;
+package com.example.finalprojectparttwo_lab;
 
 import static androidx.test.core.app.ApplicationProvider.getApplicationContext;
 import static androidx.test.espresso.Espresso.onView;

@@ -14,13 +14,14 @@
  * limitations under the License.
  */
 
-package com.example.android.testing.espresso.DataAdapterSample;
+package com.example.finalprojectparttwo_lab;
 
-import com.google.common.collect.Maps;
 
 import android.app.Activity;
 import android.os.Bundle;
 import androidx.annotation.VisibleForTesting;
+import androidx.test.espresso.core.internal.deps.guava.collect.Maps;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
