@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">FinalProjectPartTwo_Lab</string>
+    <string name="middle">middle</string>
+    <string name="item_element_text">item element text</string>
 </resources>

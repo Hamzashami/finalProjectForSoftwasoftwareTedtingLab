@@ -14,6 +14,8 @@ import java.util.List;
 
 class personAdapter extends RecyclerView.Adapter<personAdapter.viewHolder> {
 
+    public static Object viewHolder;
+
     public static class viewHolder extends RecyclerView.ViewHolder{
 
         TextView name;
@@ -50,7 +52,7 @@ class personAdapter extends RecyclerView.Adapter<personAdapter.viewHolder> {
     }
 
     @Override
-    public int getItemCount() {
+    public final int getItemCount() {
         return personList.size();
     }
 }

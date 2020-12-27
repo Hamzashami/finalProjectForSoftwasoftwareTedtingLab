@@ -31,11 +31,9 @@ import androidx.test.espresso.PerformException;
 import androidx.test.ext.junit.rules.ActivityScenarioRule;
 import androidx.test.filters.LargeTest;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
-
 import org.hamcrest.Description;
 import org.hamcrest.Matcher;
 import org.hamcrest.TypeSafeMatcher;
-import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -50,10 +48,7 @@ public class RecyclerViewSampleTest {
 
     private static final int ITEM_BELOW_THE_FOLD = 40;
 
-    /**
-     * Use {@link ActivityScenario} to create and launch the activity under test. This is a
-     * replacement for {@link androidx.test.rule.ActivityTestRule}.
-     */
+
     @Rule
     public ActivityScenarioRule<MainActivity> activityScenarioRule =
         new ActivityScenarioRule<MainActivity>(MainActivity.class);
@@ -93,13 +88,13 @@ public class RecyclerViewSampleTest {
     }
 
     /**
-     * Matches the {@link CustomAdapter.ViewHolder}s in the middle of the list.
+     * Matches the {@link personAdapter.viewHolder}s in the middle of the list.
      */
-    private static Matcher<CustomAdapter.ViewHolder> isInTheMiddle() {
-        return new TypeSafeMatcher<CustomAdapter.ViewHolder>() {
+    private static Matcher<personAdapter.viewHolder> isInTheMiddle() {
+        return new TypeSafeMatcher<personAdapter.viewHolder>() {
             @Override
-            protected boolean matchesSafely(CustomAdapter.ViewHolder customHolder) {
-                return customHolder.getIsInTheMiddle();
+            protected boolean matchesSafely(personAdapter.viewHolder viewHolder) {
+                return (boolean) personAdapter.viewHolder;
             }
 
             @Override
